@@ -1,0 +1,50 @@
+sounddevice
+google-genai
+google-generativeai
+pillow
+requests
+python-kasa
+beautifulsoup4
+# `duckduckgo-search` was renamed upstream and now only installs as a shim
+# that emits a RuntimeWarning on import. `ddgs` is the supported package and is
+# what actions/web_search.py tries first. Listing only `ddgs` avoids both the
+# warning and the shim. (It was also returning 0 results before the upgrade.)
+ddgs
+playwright          
+pyautogui
+pyperclip
+pygetwindow       
+opencv-python
+numpy
+mediapipe
+mss
+psutil
+comtypes
+pycaw               
+instagrapi
+win10toast          
+send2trash
+youtube-transcript-api
+pywinauto
+# NOTE: PyAudio was removed here on purpose. It has no wheel for Python 3.14,
+# so `pip install -r requirements.txt` tried to compile it from source and
+# needed PortAudio headers that are not present, which aborted the whole
+# install. Nothing in the codebase imports it -- audio I/O goes through
+# `sounddevice`. Re-add it only if you introduce a real PortAudio dependency.
+openpyxl
+python-pptx
+python-docx
+reportlab
+discord.py
+fastapi
+uvicorn[standard]
+cryptography
+qrcode[pil]
+python-multipart
+PyQt6
+PyQt6-WebEngine
+edge-tts
+matplotlib
+speedtest-cli
+# Test/dev tooling. Kept here so a fresh clone can run `pytest` immediately.
+pytest

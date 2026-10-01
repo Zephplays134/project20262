@@ -1,0 +1,72 @@
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Node dependencies & builds
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Installer build artifacts & large binaries (>100MB)
+installer/build_setup/
+installer/dist/
+installer/build/
+
+# Android build outputs & IDE
+brahma-connect-android/.gradle/
+brahma-connect-android/**/build/
+brahma-connect-android/local.properties
+brahma-connect-android/.idea/
+brahma-connect-android/.cxx/
+*.apk
+*.aab
+
+# Scratch & temporary logs
+scratch/
+*.log
+
+# Browser & runtime cache / backups
+config/ig_browser_profile/
+config/patch_backups/
+config/ppt_template_cache/
+
+# Credentials & Sensitive Configurations
+config/api_keys.json
+config/email_credentials.json
+config/ig_session.json
+config/*.key
+config/.*key
+config/*.sqlite3
+*.sqlite3
+
+# Personal Data
+config/identity.json
+config/device_location_cache.json
+config/learned_rules.json
+config/organizer_history.json
+config/patch_history.json
+config/brahma_connect.json
+config/brahma_connect/devices.json
+memory/calendar_events.json
+memory/long_term.json
+memory/nutrition_log.json
+ig_session.json
+api_keys.json
+email_credentials.json
+
+build/
+dist/
+gradle-8.7-bin.zip
+setup_android_sdk.ps1
+build_apk.ps1
+process_logo.py
